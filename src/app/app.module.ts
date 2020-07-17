@@ -6,11 +6,11 @@ import { MatButtonModule, MatToolbarModule } from '@angular/material';
 import { AppRoutingModule } from './app-routing';
 import { AppComponent } from './app.component';
 
-import { GalleryModule } from '@ngx-gallery/core';
-import { LightboxModule } from '@ngx-gallery/lightbox';
-import { GallerizeModule } from '@ngx-gallery/gallerize';
 import { HomeComponent } from './home/home.component';
 import { LazyComponent } from './lazy/lazy.component';
+import { GalleryModule } from 'projects/core/src/public_api';
+import { LightboxModule } from 'projects/lightbox/src/public_api';
+import { GallerizeModule } from 'projects/gallerize/src/public_api';
 
 
 @NgModule({

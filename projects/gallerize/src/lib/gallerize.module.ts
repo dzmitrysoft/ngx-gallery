@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { GalleryModule } from '@ngx-gallery/core';
-import { LightboxModule } from '@ngx-gallery/lightbox';
+import { GalleryModule } from 'projects/core/src/public_api';
+import { LightboxModule } from 'projects/lightbox/src/public_api';
 import { GallerizeDirective } from './gallerize.directive';
 
 @NgModule({

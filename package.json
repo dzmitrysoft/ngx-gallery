@@ -18,7 +18,6 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -34,7 +33,10 @@
     "link-lightbox": "npm link dist/lightbox && npm link @ngx-gallery/lightbox",
     "link-gallerize": "npm link dist/gallerize && npm link @ngx-gallery/gallerize",
     "publish-all": "node .config/publish.js",
-    "version": "node .config/version.js"
+    "version": "node .config/version.js",
+    "build": "ng build --prod",
+    "npm_pack": "npm pack",
+    "package": "npm run build && npm run npm_pack"
   },
   "private": true,
   "dependencies": {

@@ -1,6 +1,6 @@
+import { GalleryItem, Gallery, ImageItem } from 'projects/core/src/public_api';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { Gallery, GalleryItem, ImageItem } from '@ngx-gallery/core';
-import { Lightbox } from '@ngx-gallery/lightbox';
+import { Lightbox } from 'projects/lightbox/src/public_api';
 
 @Component({
   selector: 'app-lazy',

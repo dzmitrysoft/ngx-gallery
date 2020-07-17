@@ -14,8 +14,8 @@ import {
 } from '@angular/core';
 import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 
-import { Gallery, GalleryRef, ImageItem, GalleryComponent, GalleryState, GalleryItem } from '@ngx-gallery/core';
-import { Lightbox } from '@ngx-gallery/lightbox';
+import { Gallery, GalleryRef, ImageItem, GalleryComponent, GalleryState, GalleryItem } from 'projects/core/src/public_api';
+import { Lightbox } from 'projects/lightbox/src/public_api';
 
 import { Subject, Subscription, from, EMPTY } from 'rxjs';
 import { tap, map, switchMap, finalize, debounceTime } from 'rxjs/operators';

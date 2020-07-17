@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { GalleryItem, ImageItem } from '@ngx-gallery/core';
+import { GalleryItem, ImageItem } from 'projects/core/src/public_api';
 
 @Component({
   selector: 'app-home',

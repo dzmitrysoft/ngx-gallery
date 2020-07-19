@@ -26,7 +26,7 @@ export class GalleryVideoComponent implements OnInit {
   /** Stream that emits when an error occurs */
   @Output() error = new EventEmitter<Error>();
 
-  @ViewChild('video', {static: false}) video: ElementRef;
+  @ViewChild('video') video: ElementRef;
 
   ngOnInit() {
     if (this.src instanceof Array) {

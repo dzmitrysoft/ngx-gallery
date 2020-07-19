@@ -10,13 +10,14 @@
       "prefix": "",
       "schematics": {
         "@schematics/angular:component": {
-          "styleext": "scss"
+          "style": "scss"
         }
       },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/ngx-gallery",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -33,6 +34,12 @@
           },
           "configurations": {
             "production": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -136,7 +143,8 @@
           "configurations": {
             "production": {
               "project": "projects/core/ng-package.prod.json"
-            }
+            ,              "tsConfig": "projects/core/tsconfig.lib.prod.json"
+}
           }
         },
         "test": {
@@ -176,7 +184,8 @@
           "configurations": {
             "production": {
               "project": "projects/lightbox/ng-package.prod.json"
-            }
+            ,              "tsConfig": "projects/lightbox/tsconfig.lib.prod.json"
+}
           }
         },
         "test": {
@@ -216,7 +225,8 @@
           "configurations": {
             "production": {
               "project": "projects/gallerize/ng-package.prod.json"
-            }
+            ,              "tsConfig": "projects/gallerize/tsconfig.lib.prod.json"
+}
           }
         },
         "test": {
@@ -256,7 +266,8 @@
           "configurations": {
             "production": {
               "project": "projects/magnifier/ng-package.prod.json"
-            }
+            ,              "tsConfig": "projects/magnifier/tsconfig.lib.prod.json"
+}
           }
         },
         "test": {
@@ -291,6 +302,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "docs",
             "index": "projects/demo/src/index.html",
             "main": "projects/demo/src/main.ts",
@@ -307,6 +319,12 @@
           },
           "configurations": {
             "production": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
               "fileReplacements": [
                 {
                   "replace": "projects/demo/src/environments/environment.ts",

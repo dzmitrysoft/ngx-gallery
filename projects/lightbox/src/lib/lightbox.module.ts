@@ -29,7 +29,7 @@ import { LightboxConfig, LIGHTBOX_CONFIG } from './lightbox.model';
   ]
 })
 export class LightboxModule {
-  static withConfig(config: LightboxConfig): ModuleWithProviders {
+  static withConfig(config: LightboxConfig): ModuleWithProviders<LightboxModule> {
     return {
       ngModule: LightboxModule,
       providers: [

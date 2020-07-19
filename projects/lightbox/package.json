@@ -35,5 +35,8 @@
     "@angular/cdk": ">=7.0.0",
     "rxjs": ">=6.0.0",
     "@ngx-gallery/core": "VERSION"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
   }
 }

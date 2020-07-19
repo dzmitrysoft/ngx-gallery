@@ -1,36 +1,53 @@
+/*
+  This is a "Solution Style" tsconfig.json file, and is used by editors and TypeScript’s language server to improve development experience.
+  It is not intended to be used to perform a compilation.
+
+  To learn more about this file see: https://angular.io/config/solution-tsconfig.
+*/
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "baseUrl": "./",
-    "importHelpers": true,
-    "module": "esnext",
-    "outDir": "./dist/out-tsc",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "target": "es5",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
-      "es2017",
-      "dom"
-    ],
-    "paths": {
-      "core": [
-        "dist/core"
-      ],
-      "lightbox": [
-        "dist/lightbox"
-      ],
-      "gallerize": [
-        "dist/gallerize"
-      ],
-      "magnifier": [
-        "dist/magnifier"
-      ]
+  "files": [],
+  "references": [
+    {
+      "path": "./src/tsconfig.app.json"
+    },
+    {
+      "path": "./src/tsconfig.spec.json"
+    },
+    {
+      "path": "./e2e/tsconfig.e2e.json"
+    },
+    {
+      "path": "./projects/core/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/core/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/lightbox/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/lightbox/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/gallerize/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/gallerize/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/magnifier/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/magnifier/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/demo/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/demo/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/demo-e2e/tsconfig.e2e.json"
     }
-  }
+  ]
 }

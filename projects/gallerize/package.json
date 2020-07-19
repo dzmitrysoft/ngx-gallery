@@ -33,5 +33,8 @@
     "rxjs": ">=6.0.0",
     "@ngx-gallery/core": "VERSION",
     "@ngx-gallery/lightbox": "VERSION"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
   }
 }

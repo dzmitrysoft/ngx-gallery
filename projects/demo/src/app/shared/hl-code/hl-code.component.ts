@@ -23,7 +23,7 @@ export class HlCodeComponent implements AfterViewInit {
   @Input() trackX = false;
 
   @ViewChild('codeEL', {read: ElementRef}) codeEl: ElementRef;
-  @ViewChild(NgScrollbar) scrollable: NgScrollbar;
+  @ViewChild(NgScrollbar, {static: false}) scrollable: NgScrollbar;
 
   constructor(private cd: ChangeDetectorRef, private platform: Platform) {
   }

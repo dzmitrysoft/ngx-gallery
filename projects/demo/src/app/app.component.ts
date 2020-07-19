@@ -16,7 +16,7 @@ import { fadeAnimation } from './app-routing.animations';
 export class AppComponent implements OnInit {
 
   title: string;
-  @ViewChild(MatSidenav) sideNav: MatSidenav;
+  @ViewChild(MatSidenav, {static: false}) sideNav: MatSidenav;
 
   constructor(private _router: Router, private matIconRegistry: MatIconRegistry, domSanitizer: DomSanitizer) {
     this.matIconRegistry.addSvgIcon(

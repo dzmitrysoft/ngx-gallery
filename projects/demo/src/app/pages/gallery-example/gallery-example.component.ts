@@ -104,7 +104,7 @@ import { GalleryComponent, ImageItem } from '@ngx-gallery/core';
 })
 export class AppComponent implements OnInit {
 
-  @ViewChild(GalleryComponent) gallery: GalleryComponent;
+  @ViewChild(GalleryComponent, {static: false}) gallery: GalleryComponent;
 
   ngOnInit() {
     // Add items individually

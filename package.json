@@ -1,6 +1,6 @@
 {
   "name": "ngx-gallery",
-  "version": "5.0.0-beta.0",
+  "version": "7.0.0",
   "description": "Angular gallery directive that hooks the lightbox with the images automatically.",
   "homepage": "http://github.com/murhafsousli/ngx-gallery",
   "author": {
@@ -34,7 +34,13 @@
     "link-lightbox": "npm link dist/lightbox && npm link @ngx-gallery/lightbox",
     "link-gallerize": "npm link dist/gallerize && npm link @ngx-gallery/gallerize",
     "publish-all": "node .config/publish.js",
-    "version": "node .config/version.js"
+    "version": "node .config/version.js",
+    
+    "package-core": "cd dist/core && npm pack",
+    "package-lightbox": "cd dist/lightbox && npm pack",
+    "package-gallerize": "cd dist/gallerize && npm pack",
+
+    "package-all": "npm run init-build && npm run package-core && npm run package-lightbox && npm run package-gallerize"
   },
   "private": true,
   "dependencies": {
